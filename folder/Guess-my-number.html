@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+        <link rel= "stylesheet" href="guess-style.css">
+
+    <html lang="en">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number Game</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet" >
+</head>
+
+  <body>
+
+    <div class="topnav">
+      <a class="demo.html" href="index.html">Home</a>
+      <a href="soundbar.html">Soundbar</a>
+      <a href="Guess-my-number.html">Guess my number</a>
+      <img src="logo 2.png" alt="Trulli" width="80" height="50">
+        </div>
+
+    <div class="container">
+      <div id="game">
+        <h3>
+          I am thinking of a number between 1-100.<br />
+          Can you guess it?
+        </h3>
+        <div class="input-wrapper">
+          <input type="number" placeholder="00" id="guess" />
+          <button id="check-btn">Guess</button>
+        </div>
+        <p id="no-of-guesses">No. Of Guesses: 0</p>
+        <p id="guessed-nums">Guessed Numbers are: None</p>
+      </div>
+      <button id="restart">Restart</button>
+      <div class="result">
+        <div id="hint"></div>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="guess.js"></script>
+   
+   <style>
+        .parallax {
+          /* The image used */
+          background-image: url("pav.png");
+        
+          /* Set a specific height */
+          min-height: 850px;
+        
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        </style>
+        
+        <!-- Container element -->
+        <div class="parallax"></div>
+
+  </body>
+</html>

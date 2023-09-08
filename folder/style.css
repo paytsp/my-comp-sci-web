@@ -1,0 +1,154 @@
+body, html {
+  
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    /* Full height */
+    height: 50%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Images used */
+  .img1 { background-image: url("1.jpg"); }
+  .img2 { background-image: url("2.jpg"); }
+  .img3 { background-image: url("3.jpg"); }
+  .img4 { background-image: url("4.jpg"); }
+  .img5 { background-image: url("5.jpg"); }
+  .img6 { background-image: url("6.jpg"); }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    border: 10px solid #f1f1f1;
+    position: fixed; /* Stay fixed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+	position: sticky;
+	top: 0;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color:lightcoral;
+  color: white;
+}
+
+/* Split the screen in half */
+.split {
+  height: 50%;
+  width: 50%;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color:royalblue;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color:#f1f1f1;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* style code for the 2 boxes side by side */
+
+.float-container {
+  border: 3px solid #fff;
+  padding: 20px;
+  height: 440px;
+}
+
+.float-child {
+  width: 50%;
+  float: left;
+  padding: 20px;
+  background-color:  rgb(255, 255, 255);
+}  
+
+/* Style the image inside the floating boxes, */
+.float-child img {
+  width: 150px;
+  border-radius: 50%;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color:aliceblue;
+  color: #000000;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: white;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: aliceblue;
+  display: none;
+  overflow: hidden;
+}
